@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: zizb55a4c-dotnet-basic-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/zizb55a4c-dotnet-basic

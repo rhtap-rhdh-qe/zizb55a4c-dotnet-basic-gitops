@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: zizb55a4c-dotnet-basic-gitops
+  description: This is GitOps manifest for zizb55a4c-dotnet-basic   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: tssc/gitops=zizb55a4c-dotnet-basic
+    backstage.io/kubernetes-id: zizb55a4c-dotnet-basic 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: zizb55a4c-dotnet-basic
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:zizb55a4c-dotnet-basic
